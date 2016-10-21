@@ -1,8 +1,8 @@
 {
-	"name": "revenant-theme",
+	"name": "revenant",
 	"description": "Ian's personal Ghost theme!",
-	"homepage": "http://github.com/ianpaschal/revenant-theme",
-	"demo": "https://demo.ianpaschal.com/revenant-theme",
+	"homepage": "http://github.com/ianpaschal/revenant",
+	"demo": "https://demo.ianpaschal.com/ghost/revenant",
 	"version": "0.0.1",
 	"license": "MIT",
 	},
@@ -10,20 +10,12 @@
 		"name": "Ian Paschal",
 		"url": "https://code.ianpaschal.com"
 	},
-	"gpm": {
-		"type": "theme",
-		"categories": [
-			"Minimal",
-			"Personal Blogs"
-		]
-	},
 	"keywords": [
 		"ghost",
 		"theme"
 	],
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/ianpaschal/revenant-theme.git"
-	},
-	"bugs": "https://github.com/ianpaschal/revenant-theme/issues"
+		"url": "git://github.com/ianpaschal/revenant.git"
+	}
 }
