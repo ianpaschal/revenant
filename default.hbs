@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
     {{!-- Document Settings --}}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,24 +18,30 @@
 
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" />
+		<link rel="stylesheet" type="text/css" href="{{asset "css/highlight/atom-one-dark.css"}}" />
 
+		<script type="text/javascript" src="{{asset "js/init.js"}}"></script>
+		<script type="text/javascript" src="{{asset "js/highlight.min.js"}}"></script>
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
-</head>
+	</head>
 	<body class="{{body_class}}">
 
 		<div class="site-wrapper">
 			<div class="sidebar">
-				{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
-				<h1 class="blog-title">{{@blog.title}}</h1>
+				<a href="{{@blog.url}}">
+					<h1 class="blog-title">
+						{{#if @blog.logo}}
+							<img class="blog-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+						{{/if}}
+						{{@blog.title}}
+					</h1>
+				</a>
 				<p class="blog-description">{{@blog.description}}</p>
 				{{navigation}}
 				<div class="site-footer">
-						<span class="copyright">&copy;{{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a></span> &mdash; <span class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></span>
+					<span class="copyright">&copy;{{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a></span> &mdash; <span class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></span>
 				</div>
 			</div>
 			<div class="content">
@@ -43,7 +49,7 @@
 			</div>
     </div>
 
-    {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
+    {{!-- jQuery needs to come before ghost_foot so that jQuery can be used in code injection --}}
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
@@ -53,5 +59,5 @@
     {{!-- The main JavaScript file for Casper --}}
     <!--<script type="text/javascript" src="{{asset "js/index.js"}}"></script>-->
 
-</body>
+	</body>
 </html>
