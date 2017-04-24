@@ -12,6 +12,9 @@ Features:
 
 More information coming soon.
 
+## Credits
+[Bear Icon](https://thenounproject.com/term/bear/834246/) by [Gregor Cresnar](grega.cresnar@gmail.com).
+
 ## Copyright & License
 
 Copyright (c) 2016 Ian Paschal

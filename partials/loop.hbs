@@ -24,7 +24,7 @@
 		<p class="post-excerpt">
 			{{excerpt words="26"}} <a class="read-more" href="{{url}}">More &raquo;</a>
 		</p>
-		
+
 		{{#if tags}}
 	    <div class="post-tags">
 		    {{#foreach tags}}
@@ -39,4 +39,6 @@
 {{/foreach}}
 
 {{!-- Previous/next page links - displayed on every page --}}
-{{pagination}}
+<div class="pagination">
+	{{pagination}}
+</div>

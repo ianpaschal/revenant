@@ -60,7 +60,7 @@ body {
 	text-decoration: none;
 }
 .blog-title {
-	color: #343a40;
+	color: #000000;
 }
 .blog-logo {
 	width: 32px;
@@ -226,9 +226,13 @@ a:hover {
 
 }
 .post-content pre code {
-	padding: 16px;
+	padding: 16px 64px;
 }
 
+.pagination {
+	color: #adb5bd;
+	margin-bottom: 64px;
+}
 
 /*
 .post-body p {
