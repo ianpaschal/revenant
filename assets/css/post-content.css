@@ -28,13 +28,7 @@
 	list-style: decimal outside none;
 	margin-left: 16px;
 }
-.post-content img {
-	width: calc(100% + 128px);
-	margin-left: -64px;
-
-}
-.post-content pre {
-	margin-bottom: 16px;
+.post-content img, .post-content pre  {
 	width: calc(100% + 128px);
 	margin-left: -64px;
 }

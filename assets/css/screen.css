@@ -68,7 +68,6 @@ a {
 	bottom: 0;
 	line-height: 16px;
 	font-size: 12px;
-	padding: 8px 0;
 }
 
 /* THE LOOP OR PAGE VIEW */
@@ -101,6 +100,10 @@ a {
 .sidebar-section {
 	padding: 32px 0;
 	border-bottom: 1px solid var(--oc-gray-5);
+}
+.sidebar-section:last-child {
+	padding: 32px 0 16px;
+	border-bottom: none;
 }
 .text-header {
 	padding-top: 64px;

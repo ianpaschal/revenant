@@ -26,7 +26,7 @@
 .post-full {
 
 	/* Layout */
-	height: inherit;
+	min-height: 100vh;
 }
 
 .post-image {
@@ -49,6 +49,9 @@
 
 .post-body {
 	padding: 64px;
+}
+.no-splash {
+	padding-top: 128px;
 }
 .post-title {
 	margin-bottom: 16px;
