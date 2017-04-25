@@ -1,0 +1,42 @@
+.author-tile {
+
+	/* Layout */
+	overflow: hidden;
+	width: 100%;
+	padding: 64px;
+
+	/* Edges */
+	-webkit-box-shadow:	0px 1px 1px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow:		0px 1px 1px 0px rgba(0,0,0,0.1);
+	box-shadow:					0px 1px 1px 0px rgba(0,0,0,0.1);
+	/* top-left | top-right | bottom-right | bottom-left */
+	border-radius: 0 0 4px 4px;
+
+	/* Typography & Style */
+	color: var(--oc-gray-8);
+	background-color: #ffffff;
+}
+
+.author-image {
+	/* Edges */
+	border-radius: 48px;
+	width: 96px;
+	height: 96px;
+	-webkit-background-size: cover;
+	-moz-background-size:    cover;
+	-o-background-size:      cover;
+	background-size:         cover;
+	background-repeat:       no-repeat;
+	background-position:     center center;
+	float: left;
+}
+.author-info {
+	float: left;
+	margin-left: 32px;
+}
+
+.author-bio {
+	margin-left: 32px;
+	float: right;
+	width: calc(100% - 320px);
+}

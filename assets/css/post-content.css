@@ -1,0 +1,68 @@
+
+.post-content p,
+.post-content pre,
+.post-content blockquote {
+	margin: 16px 0;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+	font-weight: 500;
+	margin: 16px 0 8px;
+}
+
+
+
+
+
+.post-content ul {
+	list-style: disc outside none;
+	margin-left: 16px;
+}
+.post-content ol {
+	list-style: decimal outside none;
+	margin-left: 16px;
+}
+.post-content img {
+	width: calc(100% + 128px);
+	margin-left: -64px;
+
+}
+.post-content pre {
+	margin-bottom: 16px;
+	width: calc(100% + 128px);
+	margin-left: -64px;
+}
+.post-content pre code {
+	font-family: Menlo, 'Courier New', Courier, monospace;
+	font-size: 11px;
+	line-height: 16px;
+	padding: 16px 64px;
+}
+.post-content blockquote p {
+	margin: 32px 0;
+	padding: 8px 12px;
+	border-left: solid 4px var(--oc-gray-3);
+	font-style: italic;
+}
+.post-content hr {
+	background-color: var(--oc-gray-4);
+	height: 1px;
+	margin: 64px 0;
+}
+.post-content h1 {
+	font-size: 28px;
+}
+.post-content h2 {
+	font-size: 21px;
+}
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+	font-size: inherit;
+}
