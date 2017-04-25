@@ -11,13 +11,14 @@
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-	font-weight: 500;
 	margin: 16px 0 8px;
 }
 
 
 
-
+.post-content a {
+	text-decoration: underline;
+}
 
 .post-content ul {
 	list-style: disc outside none;
@@ -53,16 +54,4 @@
 	background-color: var(--oc-gray-4);
 	height: 1px;
 	margin: 64px 0;
-}
-.post-content h1 {
-	font-size: 28px;
-}
-.post-content h2 {
-	font-size: 21px;
-}
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
-	font-size: inherit;
 }

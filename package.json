@@ -3,7 +3,7 @@
 	"description": "Ian's personal Ghost theme!",
 	"homepage": "http://github.com/ianpaschal/revenant",
 	"demo": "https://demo.ianpaschal.com/ghost/revenant",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"license": "MIT",
 	"author": {
 		"name": "Ian Paschal",
