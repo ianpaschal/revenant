@@ -26,7 +26,7 @@
 .post-full {
 
 	/* Layout */
-	height: inherit;
+	min-height: 100vh;
 }
 
 .post-image {
@@ -50,14 +50,16 @@
 .post-body {
 	padding: 64px;
 }
+.no-splash {
+	padding-top: 128px;
+}
 .post-title {
 	margin-bottom: 16px;
-	font-size: 28px;
 }
 .post-title a {
 	text-decoration: none;
 }
-.post-author {
+.post-author, .author-stats {
 	font-size: 10px;
 	margin-bottom: 16px;
 	text-transform: uppercase;
@@ -65,8 +67,12 @@
 .post-excerpt {
 	margin-bottom: 16px;
 }
+.post-excerpt a {
+	text-decoration: underline;
+}
 .post-tags {
-	margin: 32px 0;
+	margin-top: 32px;
+	height: 24px;
 }
 .post-tags a {
 	border: 1px solid var(--oc-gray-4);
@@ -77,6 +83,7 @@
 	padding: 0 6px;
 	font-size: 10px;
 	height: 24px;
+	margin-right: 8px;
 	text-transform: uppercase;
 	text-decoration: none;
 	line-height: 22px;

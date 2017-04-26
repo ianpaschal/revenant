@@ -6,7 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     {{!-- Page Meta --}}
-    <title>{{meta_title}}</title>
+    {{!--<title>{{meta_title</title>--}}
+		<title>
+{{#if post.title}}
+      {{@blog.title}} | {{post.title}}
+{{else if tag.name}}
+			{{@blog.title}} | {{tag.name}}
+{{else if author.name}}
+      {{@blog.title}} | {{author.name}}
+{{else}}
+			{{@blog.title}}
+{{/if}}
+		</title>
     <meta name="description" content="{{meta_description}}" />
 
     {{!-- Mobile Meta --}}
@@ -30,19 +41,40 @@
 
 		<div class="site-wrapper">
 			<div class="sidebar">
-				<a href="{{@blog.url}}">
-					<h1 class="blog-title">
-						{{#if @blog.logo}}
-							<img class="blog-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
-						{{/if}}
-						{{@blog.title}}
-					</h1>
-				</a>
-				<p class="blog-description">{{@blog.description}}</p>
-				{{navigation}}
-				<div class="site-footer">
-					<span class="copyright">&copy;{{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a></span> &mdash; <span class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></span>
+
+
+				{{!-- HEADER --}}
+{{#if @blog.logo}}
+				<div class="sidebar-section logo-header" id="site-header">
+					<a href="{{@blog.url}}">
+						<img class="blog-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+{{else}}
+				<div class="sidebar-section text-header" id="site-header">
+					<a href="{{@blog.url}}">
+						<h1 class="blog-title">{{@blog.title}}</h1>
+{{/if}}
+					</a>
 				</div>
+
+				{{!-- DESCRIPTION --}}
+				<div class="sidebar-section" id="site-description">
+					<p>{{@blog.description}}</p>
+				</div>
+
+				<div class="sidebar-section" id="site-navigation">
+					{{navigation}}
+				</div>
+
+				<div class="sidebar-section" id="site-footer">
+					<p id="copyright">&copy;{{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a></p>
+					<p id="powered-by">
+						Proudly published with <a href="https://ghost.org">Ghost</a>
+					</p>
+					<p id="theme-credit">
+						<a href="https://github.com/ianpaschal/revenant">Revenant Theme</a> by Ian Paschal
+					</p>
+				</div>
+
 			</div>
 			<div class="content">
 				{{{body}}}

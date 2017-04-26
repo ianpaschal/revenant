@@ -1,23 +1,19 @@
 
 .post-content p,
 .post-content pre,
-.post-content blockquote {
-	margin: 16px 0;
-}
-
+.post-content blockquote,
 .post-content h1,
 .post-content h2,
 .post-content h3,
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-	font-weight: 500;
-	margin: 16px 0 8px;
+	margin: 16px 0;
 }
 
-
-
-
+.post-content a {
+	text-decoration: underline;
+}
 
 .post-content ul {
 	list-style: disc outside none;
@@ -28,12 +24,10 @@
 	margin-left: 16px;
 }
 .post-content img {
-	width: calc(100% + 128px);
-	margin-left: -64px;
-
+	margin-bottom: 0;
+	padding-bottom: 0
 }
-.post-content pre {
-	margin-bottom: 16px;
+.post-content img, .post-content pre  {
 	width: calc(100% + 128px);
 	margin-left: -64px;
 }
@@ -53,16 +47,4 @@
 	background-color: var(--oc-gray-4);
 	height: 1px;
 	margin: 64px 0;
-}
-.post-content h1 {
-	font-size: 28px;
-}
-.post-content h2 {
-	font-size: 21px;
-}
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
-	font-size: inherit;
 }

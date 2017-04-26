@@ -31,6 +31,28 @@ body {
 	padding: 0 64px;
 }
 
+h1 {
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 40px;
+}
+.blog-title, .post-title, .author-name {
+	line-height: 24px;
+}
+h2 {
+	font-size: 21px;
+	font-weight: 500;
+	line-height: 32px;
+}
+h3, h4, h5, h6 {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+a {
+	text-decoration: none;
+}
+
 .site-wrapper {
 	width: inherit;
 	position: relative;
@@ -38,12 +60,11 @@ body {
 }
 
 
-.site-footer {
+#site-footer {
 	position: absolute;
 	bottom: 0;
 	line-height: 16px;
 	font-size: 12px;
-	padding: 8px 0;
 }
 
 /* THE LOOP OR PAGE VIEW */
@@ -62,20 +83,26 @@ body {
 	padding: 64px 0;
 	color: var(--oc-gray-6);
 }
-.sidebar a {
-	text-decoration: none;
-}
 .blog-title {
 	color: #000000;
 }
 .blog-logo {
-	width: 32px;
-	height: 32px;
-	margin-bottom: -6px;
+	max-width: 256px;
+	max-height: 88px;
+	margin: 0 auto;
+	display: block;
+	background-color: #F00;
 }
-.blog-title, .blog-description, .navigation {
-	border-bottom: 1px solid var(--oc-gray-5);
+.sidebar-section {
 	padding: 32px 0;
+	border-bottom: 1px solid var(--oc-gray-5);
+}
+.sidebar-section:last-child {
+	padding: 32px 0 16px;
+	border-bottom: none;
+}
+.text-header {
+	padding-top: 64px;
 }
 .navigation ul {
 	list-style: none;
