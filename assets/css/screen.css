@@ -31,15 +31,12 @@ body {
 	padding: 0 64px;
 }
 
-p, h1, h2, h3, h4, h5, h6, ol, ul {
-	background-color: #FF0;
-}
 h1 {
 	font-size: 28px;
 	font-weight: 300;
 	line-height: 40px;
 }
-.blog-title, .post-title {
+.blog-title, .post-title, .author-name {
 	line-height: 24px;
 }
 h2 {
@@ -86,16 +83,15 @@ a {
 	padding: 64px 0;
 	color: var(--oc-gray-6);
 }
-.sidebar a {
-	text-decoration: none;
-}
 .blog-title {
 	color: #000000;
 }
 .blog-logo {
-	width: 32px;
-	height: 32px;
-	margin-bottom: -6px;
+	max-width: 256px;
+	max-height: 88px;
+	margin: 0 auto;
+	display: block;
+	background-color: #F00;
 }
 .sidebar-section {
 	padding: 32px 0;

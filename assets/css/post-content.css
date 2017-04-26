@@ -1,20 +1,15 @@
 
 .post-content p,
 .post-content pre,
-.post-content blockquote {
-	margin: 16px 0;
-}
-
+.post-content blockquote,
 .post-content h1,
 .post-content h2,
 .post-content h3,
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-	margin: 16px 0 8px;
+	margin: 16px 0;
 }
-
-
 
 .post-content a {
 	text-decoration: underline;
@@ -27,6 +22,10 @@
 .post-content ol {
 	list-style: decimal outside none;
 	margin-left: 16px;
+}
+.post-content img {
+	margin-bottom: 0;
+	padding-bottom: 0
 }
 .post-content img, .post-content pre  {
 	width: calc(100% + 128px);

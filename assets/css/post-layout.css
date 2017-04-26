@@ -59,13 +59,16 @@
 .post-title a {
 	text-decoration: none;
 }
-.post-author {
+.post-author, .author-stats {
 	font-size: 10px;
 	margin-bottom: 16px;
 	text-transform: uppercase;
 }
 .post-excerpt {
 	margin-bottom: 16px;
+}
+.post-excerpt a {
+	text-decoration: underline;
 }
 .post-tags {
 	margin-top: 32px;
