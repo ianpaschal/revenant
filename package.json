@@ -1,17 +1,18 @@
 {
 	"name": "revenant",
-	"description": "Ian's personal Ghost theme!",
-	"homepage": "http://github.com/ianpaschal/revenant",
-	"demo": "https://demo.ianpaschal.com/ghost/revenant",
-	"version": "1.0.0",
+	"description": "Revenant is a bare-bones, clean, and simple Ghost theme.",
+	"homepage": "https://github.com/ianpaschal/revenant",
+	"demo": "http://revenant.ianpaschal.com/",
+	"version": "1.1.0",
 	"license": "MIT",
 	"author": {
 		"name": "Ian Paschal",
-		"url": "https://code.ianpaschal.com"
+		"url": "https://github.com/ianpaschal"
 	},
 	"keywords": [
 		"ghost",
-		"theme"
+		"theme",
+		"revenant"
 	],
 	"repository": {
 		"type": "git",
