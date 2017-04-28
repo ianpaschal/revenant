@@ -3,7 +3,8 @@ Revenant is a bare-bones, clean, and simple Ghost theme.
 
 
 
-[## Demo](http://revenant.ianpaschal.com/)
+## Demo
+Coming soon!
 
 [## Download](https://github.com/ianpaschal/revenant/releases)
 
@@ -18,9 +19,6 @@ Revenant is a bare-bones, clean, and simple Ghost theme.
 - Social media buttons
 - Support for embedded videos
 - Support for mobile
-
-## Credits
-[Bear Icon](https://thenounproject.com/term/bear/834246/) by [Gregor Cresnar](grega.cresnar@gmail.com).
 
 ## Copyright & License
 
