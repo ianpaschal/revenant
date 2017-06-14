@@ -1,7 +1,7 @@
 # Revenant Theme
 Revenant is a bare-bones, clean, and simple Ghost theme.
 
-
+[![Github All Releases](https://img.shields.io/github/downloads/ianpaschal/revenant/total.svg)]()
 
 ## Demo
 Coming soon!
