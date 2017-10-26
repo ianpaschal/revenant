@@ -5,9 +5,9 @@
 	width: 100%;
 
 	/* Edges */
-	-webkit-box-shadow:	0px 1px 1px 0px rgba(0,0,0,0.1);
-	-moz-box-shadow:		0px 1px 1px 0px rgba(0,0,0,0.1);
-	box-shadow:					0px 1px 1px 0px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow:    0px 1px 1px 0px rgba(0,0,0,0.1);
+	box-shadow:         0px 1px 1px 0px rgba(0,0,0,0.1);
 
 	/* Typography & Style */
 	color: var(--oc-gray-8);
