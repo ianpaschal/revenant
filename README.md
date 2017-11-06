@@ -1,6 +1,8 @@
 # Revenant Theme
 Revenant is a bare-bones, clean, and simple Ghost theme.
 
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/71ad61274c374b9398e2e60dcc77ce27)](https://www.codacy.com/app/ianpaschal/revenant?utm_source=github.com&utm_medium=referral&utm_content=ianpaschal/revenant&utm_campaign=badger)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 [![Github All Releases](https://img.shields.io/github/downloads/ianpaschal/revenant/total.svg)]()
 [![label](https://img.shields.io/github/issues-raw/badges/shields/website.svg)]()
