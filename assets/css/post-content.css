@@ -1,0 +1,50 @@
+
+.post-content p,
+.post-content pre,
+.post-content blockquote,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+	margin: 16px 0;
+}
+
+.post-content a {
+	text-decoration: underline;
+}
+
+.post-content ul {
+	list-style: disc outside none;
+	margin-left: 16px;
+}
+.post-content ol {
+	list-style: decimal outside none;
+	margin-left: 16px;
+}
+.post-content img {
+	margin-bottom: 0;
+	padding-bottom: 0
+}
+.post-content img, .post-content pre  {
+	width: calc(100% + 128px);
+	margin-left: -64px;
+}
+.post-content pre code {
+	font-family: "Menlo", monospace;
+	font-size: 11px;
+	line-height: 16px;
+	padding: 16px 64px;
+}
+.post-content blockquote p {
+	margin: 32px 0;
+	padding: 8px 12px;
+	border-left: solid 4px var(--oc-gray-3);
+	font-style: italic;
+}
+.post-content hr {
+	background-color: var(--oc-gray-4);
+	height: 1px;
+	margin: 64px 0;
+}

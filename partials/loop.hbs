@@ -4,23 +4,41 @@
 </div>-->
 
 {{#foreach posts}}
-<div class="{{post_class}}">
+<div class="post-tile">
 
 	{{! image }}
 	{{#if image}}
-	<a href="{{url}}"><div class="post-image" style="background-image: url({{image}})">
-	</div></a>
+	<a href="{{url}}">
+		<div class="post-image" style="background-image: url({{image}})"></div>
+	</a>
 	{{/if}}
-	<div class="post-text">
+	<div class="post-body">
 		<h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
-		<p class="post-excerpt">{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
-		{{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
-		{{author}}
-		{{tags prefix=" on "}}
-		<time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+		<p class="post-author">
+			{{author}} on
+			<time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">
+				{{date format="DD MMMM YYYY"}}
+			</time>
+		</p>
+
+		<p class="post-excerpt">
+			{{excerpt words="32"}}&hellip; <a class="read-more" href="{{url}}"> Read more &raquo;</a>
+		</p>
+
+		{{#if tags}}
+	    <div class="post-tags">
+		    {{#foreach tags}}
+	        <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">
+						{{name}}
+					</a>
+		    {{/foreach}}
+			</div>
+	  {{/if}}
 	</div>
 </div>
 {{/foreach}}
 
 {{!-- Previous/next page links - displayed on every page --}}
-{{pagination}}
+<div class="pagination">
+	{{pagination}}
+</div>

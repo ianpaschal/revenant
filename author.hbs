@@ -1,27 +1,44 @@
 {{!< default}}
 {{#author}}
-	<section class="author-profile inner">
+
+
+	<div class="author-tile">
+
 		{{#if image}}
-		<figure class="author-image">
-			<div class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
-		</figure>
+			<div class="author-image" style="background-image: url({{image}})"></div>
 		{{/if}}
-		<h1 class="author-title">{{name}}</h1>
-		{{#if bio}}
-				<h2 class="author-bio">{{bio}}</h2>
-		{{/if}}
-		<div class="author-meta">
-			{{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-			{{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-			<span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+
+
+
+		<div class="author-info">
+			<h1 class="author-name">
+				{{name}}
+			</h1>
+			{{#if location}}
+				<p class="author-location icon-location">
+					{{location}}
+				</p>
+			{{/if}}
+			{{#if website}}
+				<p class="author-link icon-link">
+					<a href="{{website}}">
+						{{website}}
+					</a>
+				</p>
+			{{/if}}
+			<p class="author-stats">
+				{{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+			</p>
 		</div>
-	</section>
+{{#if bio}}
+		<div class="author-bio">
+			<p>
+				{{bio}}
+			</p>
+		</div>
+{{/if}}
+	</div>
 {{/author}}
 
-{{!-- The main content area on the homepage --}}
-<main class="content" role="main">
-
-		{{!-- The tag below includes the post loop - partials/loop.hbs --}}
-		{{> "loop"}}
-
-</main>
+{{!-- The tag below includes the post loop - partials/loop.hbs --}}
+{{> "loop"}}

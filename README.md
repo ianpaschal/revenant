@@ -1,22 +1,32 @@
 # Revenant Theme
+Revenant is a bare-bones, clean, and simple Ghost theme.
+
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/71ad61274c374b9398e2e60dcc77ce27)](https://www.codacy.com/app/ianpaschal/revenant?utm_source=github.com&utm_medium=referral&utm_content=ianpaschal/revenant&utm_campaign=badger)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+[![Github All Releases](https://img.shields.io/github/downloads/ianpaschal/revenant/total.svg)]()
+[![label](https://img.shields.io/github/issues-raw/badges/shields/website.svg)]()
 
-Ian's personal Ghost theme!
+## Demo
+Coming soon!
 
-Features:
+[## Download](https://github.com/ianpaschal/revenant/releases)
 
+## Features
 - Minimalist, like the Revenant soundtrack.
 - White, like the winter landscape in the Revenant.
-- Safe, no sign of Tom Hardy or his scalp.
-- 33% more comfortable than Leonardo DiCaprio's fur coat.
-- 300% faster than Leonardo DiCaprio's journey back to Fort Kiowa.
+- Safe: no sign of bears.
+- 20% more comfortable than being left for dead in the winter wilderness.
+- 125% more streamlined than Hugh Glass' journey back to Fort Kiowa.
 
-More information coming soon.
+## Planned Features
+- Social media buttons
+- Support for embedded videos
+- Support for mobile
 
 ## Copyright & License
 
-Copyright (c) 2016 Ian Paschal
+Copyright (c) 2017 Ian Paschal
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
