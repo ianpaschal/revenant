@@ -44,11 +44,14 @@ h2 {
 }
 h3, h4, h5, h6 {
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 24px;
 }
 a {
 	text-decoration: none;
+}
+strong {
+	font-weight: 700;
 }
 
 
